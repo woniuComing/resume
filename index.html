@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>蜗牛先生</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
+    <!-- rem适配 -->
+    <script type="text/javascript">
+    (function(win, lib) {
+        var doc = win.document;
+        var docEl = doc.documentElement;
+        var devicePixelRatio = win.devicePixelRatio;
+        var dpr = 1;
+        var scale = 1;
+
+        function setViewport() {
+            dpr = 1;
+            win.devicePixelRatioValue = dpr;
+            scale = 1 / dpr;
+            var metaEl = doc.createElement("meta");
+            metaEl.setAttribute("name", "viewport");
+            metaEl.setAttribute("content", "initial-scale=" + scale + ", maximum-scale=" + scale + ", minimum-scale=" + scale + ", user-scalable=no");
+            if (docEl.firstElementChild) {
+                docEl.firstElementChild.appendChild(metaEl)
+            } else {
+                var wrap = doc.createElement("div");
+                wrap.appendChild(metaEl);
+                doc.write(wrap.innerHTML)
+            }
+        }
+
+        setViewport();
+        var newBase = 100;
+
+        function setRem() {
+            var visualView = Math.min(docEl.getBoundingClientRect().width, lib.maxWidth);
+            newBase = 100 * visualView / lib.desinWidth;
+            docEl.style.fontSize = newBase + "px"
+        }
+
+        var tid;
+        lib.desinWidth = 640;
+        lib.baseFont = 18;
+        lib.maxWidth = 540;
+        lib.init = function() {
+            win.addEventListener("resize", function() {
+                clearTimeout(tid);
+                tid = setTimeout(setRem, 300)
+            }, false);
+            win.addEventListener("pageshow", function(e) {
+                if (e.persisted) {
+                    clearTimeout(tid);
+                    tid = setTimeout(setRem, 300)
+                }
+            }, false);
+            if (doc.readyState === "complete") {
+                doc.body.style.fontSize = lib.baseFont * dpr + "px"
+            } else {
+                doc.addEventListener("DOMContentLoaded", function(e) {
+                    doc.body.style.fontSize = lib.baseFont * dpr + "px"
+                }, false)
+            }
+            setRem();
+            docEl.setAttribute("data-dpr", dpr)
+        }
+    })(window, window["adaptive"] || (window["adaptive"] = {}));
+    window['adaptive'].desinWidth = 640; // 设计图宽度
+    window['adaptive'].baseFont = 12; // 没有缩放时的字体大小
+    window['adaptive'].maxWidth = 540; // 页面最大宽度 默认540
+    window['adaptive'].init(); // 调用初始化方法
+    </script>
+    <!-- Rem适配结束 -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+    <script src="js/zepto.min.js"></script>
+    <script src="js/swiper-3.3.1.jquery.min.js"></script>
+    <!-- <script src="js/index.js"></script> -->
+</head>
+
+<body>
+    <!-- loading图片 -->
+    <div class="load">
+        <img src="imgs/ring.gif" alt="">
+    </div>
+    <!-- 插入背景音乐 -->
+    <audio autoplay src="imgs/纯音乐-虫儿飞(陶笛版).mp3"></audio>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- 第一屏开始 -->
+            <div class="current swiper-slide swiper-first">
+                <div class="main">
+                    <img class="img-mid" src="imgs/img001-1.jpg" alt="">
+                    <img class="common img-lt" src="imgs/img001-2.jpg" alt="">
+                    <img class="common img-lb" src="imgs/img001-3.jpg" alt="">
+                    <img class="common img-lm" src="imgs/img001-4.jpg" alt="">
+                    <img class="common img-rb" src="imgs/img001-5.jpg" alt="">
+                    <img class="common img-rt" src="imgs/img001-6.jpg" alt="">
+                    <img class="common img-name" src="imgs/img-name.jpg" alt="">
+                </div>
+            </div>
+            <!-- 第一屏结束 -->
+            <!-- 第二屏开始 -->
+            <div class="swiper-slide swiper-second">
+                <div class="paop">
+                    <span>史</span>
+                    <span>双</span>
+                    <span>伟</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="book">
+                    <p>性别:男</p>
+                    <p>民族:汉</p>
+                    <p>籍贯:河南</p>
+                    <p>学历:本科</p>
+                    <p>外语:CET-4</p>
+                    <p>求职:web前端</p>
+                    <p>工作经验:3年</p>
+                    <p>电话:18210810128</p>
+                </div>
+            </div>
+            <!-- 第二屏结束 -->
+            <!-- 第三屏开始 -->
+            <div class="swiper-slide swiper-third">
+                <div class="contain">
+                    <div class="b-l"></div>
+                    <div class="b-r"></div>
+                    <div class="b-t"></div>
+                    <div class="b-b"></div>
+                    <h1>职业技能篇</h1>
+                    <p>
+                        1.HTML、CSS
+                        <span>★★★★★</span>
+                    </p>
+                    <span></span>
+                    <p>2.HTML5、CSS3
+                        <span>★★★★★</span>
+                    </p>
+                    <span></span>
+                    <p>3.原生js、闭包、原型
+                        <span>★★★★★</span>
+                    </p>
+                    <span></span>
+                    <p>4.jQuery、Zepto、Bootstrap
+                        <span>★★★★★</span>
+                    </p>
+                    <span></span>
+                    <p>5.WebStrom、Sublime、Gulp
+                        <span>★★★★★</span>
+                    </p>
+                    <span></span>
+                    <p>6.PS、Firework
+                        <span>★★★★★</span>
+                    </p>
+                    <span></span>
+                    <p>7.Http协议
+                        <span>★★★☆☆</span>
+                    </p>
+                    <span></span>
+                    <p>8.sea.js、require.js
+                        <span>★★★☆☆</span>
+                    </p>
+                    <span></span>
+                    <p>9.angular.js、node.js、php
+                        <span>★★★☆☆</span>
+                    </p>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div class="extra">
+                        <h3>注:</h3>
+                        <h3><span>★★★★★</span>代表熟练掌握</h3>
+                        <h3><span>★★★</span>代表了解</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- 第三屏结束 -->
+            <!-- 第四屏开始 -->
+            <div class="swiper-slide swiper-fourth">
+                <div class="oval">
+                    <h1>2015.3-2016.9</h1>
+                    <p>北京腾信软创科技有限公司</p>
+                    <p>web前端</p>
+                </div>
+                <div class="oval">
+                    <h1>2014.5-2015.2</h1>
+                    <p>北京巴士壹佰网络科技有限公司</p>
+                    <p>web前端</p>
+                </div>
+            </div>
+            <!-- 第四屏结束 -->
+            <!-- 第五屏开始-->
+            <div class="swiper-slide swiper-fifth">
+                <div class="toMyself">
+                    <p>IF YOU WANT SOMETHING,</p>
+                    <p>GO GET IT.PERIOD.</p>
+                    <p>AFRAID, </p>
+                    <p>YOU WILL LOSE A LIFETIME.</p>
+                    <p>HOPE</p>
+                    <p>IS A GOOD THING,</p>
+                    <p>MAYBE THE BEST THING</p>
+                </div>
+                <div class="more">
+                    <a href="tel:18210810128">了解更多</a>
+                </div>
+            </div>
+            <!-- 第五屏结束 -->
+        </div>
+    </div>
+    <script>
+    var mySwiper = new Swiper('.swiper-container', {
+            direction: 'horizontal',
+            onSlideChangeEnd: function(swiper) {
+                var num = swiper.activeIndex;
+                $(".swiper-slide").eq(num).addClass('current').siblings().removeClass('current');
+            }
+
+        })
+        // 图片loading状态
+    $(function() {
+        $(window).on("load", function() {
+            $(".load").css("display", "none");
+            $("body").css("overflow", "visible");
+        });
+    })
+    </script>
+</body>
+
+
+</html>
