@@ -24,7 +24,7 @@ body {
 }
 
 /* loading */
-body {
+/* body {
    overflow: hidden;
 }
 .load {
@@ -42,7 +42,7 @@ body {
     margin-left: -97px;
     margin-top: -97px;
 }
-
+ */
 /* 第一屏设置 */
 
 .swiper-first {
