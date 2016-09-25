@@ -80,12 +80,7 @@
     <script src="js/zepto.min.js"></script>
     <script src="js/swiper-3.3.1.jquery.min.js"></script>
     <!-- <script src="js/index.js"></script> -->
-    <script>
-        $(window).on("load", function() {
-            $(".load").css("display", "none");
-            $("body").css("overflow", "visible");
-        });
-    </script>
+
 </head>
 
 <body>
@@ -93,6 +88,12 @@
     <div class="load">
         <img src="imgs/ring.gif" alt="">
     </div>
+    <script>
+        $(window).on("load", function() {
+            $(".load").css("display", "none");
+            $("body").css("overflow", "visible");
+        });
+    </script>
     <!-- 插入背景音乐 -->
     <audio autoplay loop src="imgs/纯音乐-虫儿飞(陶笛版).mp3"></audio>
     <div class="swiper-container">
@@ -220,7 +221,7 @@
     <script>
     var mySwiper = new Swiper('.swiper-container', {
             direction: 'horizontal',
-            autoplayDisableOnInteraction : false,
+            touchMoveStopPropagation : false,
             onSlideChangeEnd: function(swiper) {
                 var num = swiper.activeIndex;
                 $(".swiper-slide").eq(num).addClass('current').siblings().removeClass('current');
@@ -235,6 +236,7 @@
         });
     })*/
     </script>
+
 </body>
 
 

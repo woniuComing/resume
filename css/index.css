@@ -315,18 +315,18 @@ body {
 	-webkit-animation: paoSeventh 1s 0.5s infinite ease-in-out forwards;
 }
 .swiper-second .book {
-	padding-top: 0.2rem;
+	padding-top: 0.14rem;
 	padding-left: 0.3rem;
-	margin: 0.2rem auto 0;
+	margin: 0 auto;
 	width: 4rem;
-	height: 4.6rem;
+	height: 4.2rem;
 	border: 1px solid #fff;
 	position: relative;
 	border-radius:0.4rem/0.6rem;
 	box-shadow: 0 0 5px #fff;
 	color: #fff;
 	font-size: 0.32rem;
-	line-height: 0.6rem;
+	line-height: 0.56rem;
 	opacity: 0;
 }
 .current.swiper-second .book {
@@ -390,8 +390,8 @@ body {
 	left: 4rem;
 	}
 	to {
-	left: 3rem;
-	top: 1rem;
+	left: 2.6rem;
+	top: 0.7rem;
 	}
 }
 @-webkit-keyframes paoS {
@@ -400,8 +400,8 @@ body {
 	left: 4rem;
 	}
 	to {
-	left: 3rem;
-	top: 1rem;
+	left: 2.6rem;
+	top: 0.7rem;
 	}
 }
 @keyframes paoThird {
@@ -431,7 +431,7 @@ body {
 	}
 	to {
 	left: 3.5rem;
-	top: 3.2rem;
+	top: 3rem;
 	}
 }
 @-webkit-keyframes paoFourth {
@@ -441,7 +441,7 @@ body {
 	}
 	to {
 	left: 3.5rem;
-	top: 3.2rem;
+	top: 3rem;
 	}
 }
 @keyframes paoFifth {
@@ -763,14 +763,14 @@ body {
  }
  .swiper-fourth .oval {
  	width: 5rem;
- 	height: 4rem;
+ 	height: 3.5rem;
  	background-color: rgba(255,255,255,0.2);
  	border-radius: 50%;
  	margin: 0 auto;
  	box-shadow: 0 4px 8px #222;
  	text-align: center;
  	color: #fff;
- 	padding-top: 1rem;
+ 	padding-top: 0.8rem;
  	font-size: 0.32rem;
  	line-height: 0.7rem;
  	position: absolute;
@@ -914,7 +914,7 @@ body {
  	background-color:#336666;
  }
  .swiper-fifth .toMyself {
- 	margin-top: 2rem;
+ 	margin-top: 1.5rem;
  }
  .swiper-fifth .toMyself p {
  	text-align: center;
@@ -1002,7 +1002,7 @@ body {
 		bottom: -2rem;
 	}
 	to {
-		bottom: 2.4rem;
+		bottom: 1.6rem;
 	}
 } 
 @-webkit-keyframes moreToMove {
@@ -1010,7 +1010,7 @@ body {
 		bottom: -2rem;
 	}
 	to {
-		bottom: 2.4rem;
+		bottom: 1.6rem;
 	}
 }
 @keyframes pEToMove {
