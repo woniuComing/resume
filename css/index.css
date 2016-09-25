@@ -914,7 +914,7 @@ body {
  	background-color:#336666;
  }
  .swiper-fifth .toMyself {
- 	margin-top: 1.5rem;
+ 	margin-top: 1rem;
  }
  .swiper-fifth .toMyself p {
  	text-align: center;
@@ -1002,7 +1002,7 @@ body {
 		bottom: -2rem;
 	}
 	to {
-		bottom: 1.6rem;
+		bottom: 1.2rem;
 	}
 } 
 @-webkit-keyframes moreToMove {
@@ -1010,7 +1010,7 @@ body {
 		bottom: -2rem;
 	}
 	to {
-		bottom: 1.6rem;
+		bottom: 1.2rem;
 	}
 }
 @keyframes pEToMove {
