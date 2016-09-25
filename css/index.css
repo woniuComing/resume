@@ -14,14 +14,17 @@ body {
     height: 100%;
 }
 
-.swiper-wrapper,
+.swiper-wrapper{
+    height: 100%;
+    width: 100%;
+}
 .swiper-slide {
     height: 100%;
     width: 100%;
 }
 
 /* loading */
-body {
+/* body {
    overflow: hidden;
 }
 .load {
@@ -29,7 +32,7 @@ body {
     height: 100%;
     background-color: #111;
     text-align: center;
-    /* overflow: hidden; */
+    overflow: hidden;
     position: relative;
 }
 .load img {
@@ -39,10 +42,12 @@ body {
     margin-left: -97px;
     margin-top: -97px;
 }
-
+ */
 /* 第一屏设置 */
 
 .swiper-first {
+	width: 100%;
+	height: 100%;
     background-color: #0A2C4F;
     color: #fff;
     font-size: .5rem;
@@ -212,6 +217,8 @@ body {
 /* 第二屏开始 */
 
 .swiper-second {
+	width: 100%;
+	height: 100%;
     background-color: #99CC33;
     padding-top: 0.5rem;
 }
@@ -525,6 +532,8 @@ body {
 /* 第三屏开始 */
 
 .swiper-third {
+	width: 100%;
+	height: 100%;
     background-color: #336699;
    	overflow: hidden;
 }
@@ -771,6 +780,8 @@ body {
 /* 第三屏结束 */
 /* 第四屏开始 */
  .swiper-fourth {
+ 	width: 100%;
+	height: 100%;
  	background-color:#993333;
  	overflow: hidden;
  }
@@ -922,6 +933,8 @@ body {
 /* 第四屏结束 */
 /* 第五屏开始 */
  .swiper-fifth {
+ 	width: 100%;
+	height: 100%;
  	background-color:#336666;
  }
  .swiper-fifth .toMyself {
