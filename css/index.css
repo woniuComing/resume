@@ -777,7 +777,7 @@ body {
  }
   .swiper-fourth .oval:nth-child(1){
   	left: 200%;
-  	top: 1.2rem;
+  	top: 0.6rem;
   }
   .current.swiper-fourth .oval:nth-child(1){
   	animation: ovalFToShow 2s forwards;
@@ -785,7 +785,7 @@ body {
   }
   .swiper-fourth .oval:nth-child(2){
   	left: -200%;
-  	bottom: 1.2rem;
+  	bottom: 0.6rem;
   	transform: translate(-50%,0);
   	-webkit-transform: translate(-50%,0);
   }
